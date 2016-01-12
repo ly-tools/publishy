@@ -39,6 +39,9 @@
     "check-dep-version": "0.0.1",
     "check-taggable": "0.0.2",
     "check-tracked": "^0.1.0",
-    "linglog": "0.0.4"
+    "co": "^4.6.0",
+    "linglog": "0.0.4",
+    "lodash": "^3.10.1",
+    "semver": "^5.1.0"
   }
 }
