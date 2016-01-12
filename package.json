@@ -1,0 +1,44 @@
+{
+  "name": "publishy",
+  "version": "0.0.1",
+  "description": "Publish modules like a boss ",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
+  },
+  "bin": {
+    "publishy": "./bin/cli"
+  },
+  "author": "LingyuCoder",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3",
+    "mocha-sinon": "~1.1.4",
+    "should": "^8.1.0",
+    "sinon": "~1.17.2",
+    "uncolor": "^0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LingyuCoder/publishy"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/LingyuCoder/publishy/issues"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "check-branch": "0.0.3",
+    "check-changelog": "0.0.1",
+    "check-committed": "^0.1.0",
+    "check-dep-version": "0.0.1",
+    "check-taggable": "0.0.2",
+    "check-tracked": "^0.1.0",
+    "linglog": "0.0.4"
+  }
+}

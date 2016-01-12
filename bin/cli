@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+'use strict';
+const program = require('../index.js');
+
+program.parse(process.argv);
+
+!program.args[0] && program.help();
