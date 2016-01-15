@@ -1,24 +1,10 @@
 'use strict';
 
 require('should');
-require('mocha-sinon');
-const program = require('../index');
-const uncolor = require('uncolor');
+const publishy = require('../index');
 
 describe('publishy', () => {
-  let rst;
-  beforeEach(function() {
-    this.sinon.stub(console, 'log', function() {
-      rst = arguments[0];
-    });
-  });
   it('should print "test"', () => {
-    program.parse([
-      'node',
-      './bin/cli',
-      '-t',
-      'file.js'
-    ]);
-    return uncolor(rst).trim().should.be.eql('test');
+    return publishy('0.0.2', '/Users/lingyu/github/publishy-test', {});
   });
 });

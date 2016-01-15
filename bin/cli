@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-const program = require('../index.js');
+const program = require('../cli.js');
 
 program.parse(process.argv);
 
