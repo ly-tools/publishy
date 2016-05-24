@@ -1,6 +1,6 @@
 {
   "name": "publishy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Publish modules like a boss ",
   "engines": {
     "node": ">=4.0.0"
@@ -12,6 +12,7 @@
   "author": "LingyuCoder",
   "license": "MIT",
   "devDependencies": {
+    "commander": "^2.9.0",
     "istanbul": "~0.4.0",
     "mocha": "~2.3.3",
     "mocha-sinon": "~1.1.4",
